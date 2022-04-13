@@ -11,8 +11,42 @@ html,body {
     font-family: 'Oswald',sans-serif;
     margin: 0;
     padding: 0;
-    
+    background-color:aquamarine;
 }
+
+main.photos{
+    padding: 10px;
+    display: grid;
+    grid-gap:2px;
+    grid-auto-rows: 200px;
+    grid-template-columns: repeat(auto-fit,minmax(200px,1fr));
+    grid-auto-flow: dense;    
+}
+
+
+
+.image-container{
+    position: relative;
+}
+
+img.image-grid{
+    width: 100%;
+    height: 100%;
+    object-fit:cover;
+}
+
+.wide{
+    grid-column: span 2;
+}
+.tall {
+    grid-row: span 2;
+}
+.big{
+    grid-column: span 2;
+    grid-row: span 2;
+}
+
+
 
 header {
     display: flex;

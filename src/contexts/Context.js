@@ -40,9 +40,13 @@ function ContextProvider(props){
     const removeFromCart=(imgObj)=>{
         setCartitems(cartItems.filter(item => item !== imgObj))
     }
+    
+    const emptyCart =()=>{
+        setCartitems([])
+    }
 
     return (
-        <Context.Provider value={{allPhotos,cartItems,toggleFavorite,addToCart,removeFromCart}}>
+        <Context.Provider value={{allPhotos,cartItems,toggleFavorite,addToCart,removeFromCart,emptyCart}}>
             {props.children}
         </Context.Provider>
     )

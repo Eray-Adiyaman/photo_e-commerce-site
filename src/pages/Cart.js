@@ -26,7 +26,7 @@ function Cart(){
             {cartElements}
             <p className="total-cost"> Total: {totalCost} </p>
             <div className="order-button">
-                 <button onClick={placeOrder}>{buttonText}</button>
+                {cartItems.length >0 && <button onClick={placeOrder}>{buttonText}</button>}
             </div>
         </main>
            

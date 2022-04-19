@@ -9,6 +9,7 @@ function Header(){
 
     // instead of using conditional rendering for 2 cart icons,i can use string interpolation for cart icon classname =>
     // const cartClassName = cartItems.length > 0 ? "ri-shopping-cart-fill ri-fw ri-2x" : "ri-shopping-cart-line ri-fw ri-2x" && classname={`${cartClassName}`} both works
+    // see -> cartitem component trashbin
 
     return(
         <header>
